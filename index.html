@@ -1,0 +1,446 @@
+<title>TerraWatch Field — Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg:        #FAFAF8;
+    --bg-subtle: #F0EFec;
+    --ink:       #0F2744;
+    --muted:     #6B7A92;
+    --accent:    #1D6FD8;
+    --border:    #D8DDE6;
+    --surface:   #FFFFFF;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:        #0A1929;
+      --bg-subtle: #0F2236;
+      --ink:       #E8EDF5;
+      --muted:     #8A9AB5;
+      --accent:    #4D8FE8;
+      --border:    #1E3050;
+      --surface:   #0F2236;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg:        #0A1929;
+    --bg-subtle: #0F2236;
+    --ink:       #E8EDF5;
+    --muted:     #8A9AB5;
+    --accent:    #4D8FE8;
+    --border:    #1E3050;
+    --surface:   #0F2236;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── Layout ── */
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 48px;
+    gap: 16px;
+  }
+
+  .wordmark {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .wordmark-app {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.3px;
+  }
+
+  .wordmark-doc {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .lang-toggle {
+    display: flex;
+    gap: 4px;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px;
+    flex-shrink: 0;
+  }
+
+  .lang-btn {
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .lang-btn.active {
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  /* ── Document sections ── */
+  .doc-title {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: -0.4px;
+  }
+
+  .doc-meta {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 48px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .section h2 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+    text-wrap: balance;
+  }
+
+  .section p {
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  .section ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .section ul li {
+    padding-left: 20px;
+    position: relative;
+    color: var(--ink);
+  }
+
+  .section ul li::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .callout {
+    background: var(--bg-subtle);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+
+  .callout p {
+    font-size: 14px;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  footer {
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  /* ── Language visibility ── */
+  [data-lang="fr"] { display: none; }
+
+  body.lang-fr [data-lang="en"] { display: none; }
+  body.lang-fr [data-lang="fr"] { display: revert; }
+
+  @media (max-width: 480px) {
+    .doc-title { font-size: 26px; }
+    header { padding-top: 24px; margin-bottom: 36px; }
+  }
+</style>
+
+<div class="page">
+  <header>
+    <div class="wordmark">
+      <span class="wordmark-app">TerraWatch Field</span>
+      <span class="wordmark-doc" data-lang="en">Privacy Policy</span>
+      <span class="wordmark-doc" data-lang="fr">Politique de confidentialité</span>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('fr')">FR</button>
+    </div>
+  </header>
+
+  <!-- ══ ENGLISH ══ -->
+  <div data-lang="en">
+    <h1 class="doc-title">Your land data belongs to you — and only you.</h1>
+    <p class="doc-meta">Effective date: August 20, 2026 &nbsp;·&nbsp; Version 1.0</p>
+
+    <div class="section">
+      <div class="section-title">Overview</div>
+      <p>TerraWatch Field ("the app", "we") is built on a zero-knowledge principle: your land locations, parcel names, coordinates, and notes are encrypted on your device before they ever reach our servers. We cannot read them. This document explains exactly what we collect, why, and what we do with it.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">01 — What we collect</div>
+      <h2>Account information</h2>
+      <ul>
+        <li>Phone number — used to identify your account and send recovery notifications via SMS.</li>
+        <li>Email address — optional. Used for account recovery only if you provide one.</li>
+        <li>Password — stored as a one-way hash. We never store or transmit your plaintext password.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Land data (zero-knowledge encrypted)</h2>
+      <div class="callout">
+        <p>All parcel names, coordinates, boundary points, notes, and subplot details are encrypted with a key derived from your passphrase before leaving your device. We store only the encrypted ciphertext. We have no technical means to read your land data, nor to know what any given user's properties are or where they are located.</p>
+      </div>
+      <ul>
+        <li>GPS coordinates and boundary vertices of your parcels</li>
+        <li>Property names and notes you assign</li>
+        <li>Subplot names and land use types</li>
+        <li>Calculated area values</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Recovery data</h2>
+      <ul>
+        <li>Security questions and answers — encrypted client-side. We cannot read them.</li>
+        <li>Encrypted passphrase backup — stored as a PBKDF2-derived, AES-256 encrypted blob. Your passphrase is never transmitted in plaintext.</li>
+        <li>Recovery hold metadata — timestamps and status of any active account recovery hold. Used to enforce the 24-hour security waiting period.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Technical data we do not collect</h2>
+      <ul>
+        <li>No advertising identifiers</li>
+        <li>No analytics or usage tracking</li>
+        <li>No device fingerprinting</li>
+        <li>No contact lists or other app data</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">02 — Third-party services</div>
+      <h2>Supabase</h2>
+      <p>Our database is hosted on Supabase (PostgreSQL). Only encrypted ciphertext is stored there. Supabase operates under EU data protection standards. <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy →</a></p>
+
+      <h2 style="margin-top:24px">Twilio</h2>
+      <p>We use Twilio to send SMS notifications when an account recovery is initiated — so you know if someone is attempting to access your account. Your phone number is transmitted to Twilio solely for this purpose and is not used for marketing. <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank">Twilio Privacy Policy →</a></p>
+
+      <h2 style="margin-top:24px">Mapbox</h2>
+      <p>Satellite and terrain maps are rendered using Mapbox. When you view a map, Mapbox may log the tile requests (which include approximate viewport location). This is standard map tile telemetry and is not linked to your account or land data. <a href="https://www.mapbox.com/legal/privacy" target="_blank">Mapbox Privacy Policy →</a></p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">03 — Your rights</div>
+      <p>You may request deletion of your account and all associated data at any time by contacting us. Because your land data is encrypted and we hold no decryption key, deletion is final — we have no way to recover it on your behalf.</p>
+      <p>You may export your parcel data from within the app at any time.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">04 — Data retention</div>
+      <p>Account data is retained for as long as your account is active. Encrypted land data is retained until you delete a parcel or close your account. Recovery hold logs are deleted 30 days after the hold resolves.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">05 — Contact</div>
+      <p>Questions or deletion requests: <a href="mailto:forcadosc@gmail.com">forcadosc@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ══ FRENCH ══ -->
+  <div data-lang="fr">
+    <h1 class="doc-title">Vos données foncières vous appartiennent — et à vous seul.</h1>
+    <p class="doc-meta">Date d'effet : 20 août 2026 &nbsp;·&nbsp; Version 1.0</p>
+
+    <div class="section">
+      <div class="section-title">Aperçu</div>
+      <p>TerraWatch Field (« l'application », « nous ») repose sur un principe de connaissance zéro : vos localisations foncières, noms de parcelles, coordonnées et notes sont chiffrés sur votre appareil avant d'atteindre nos serveurs. Nous ne pouvons pas les lire. Ce document explique précisément ce que nous collectons, pourquoi, et ce que nous en faisons.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">01 — Ce que nous collectons</div>
+      <h2>Informations de compte</h2>
+      <ul>
+        <li>Numéro de téléphone — utilisé pour identifier votre compte et envoyer des notifications de récupération par SMS.</li>
+        <li>Adresse e-mail — facultative. Utilisée uniquement pour la récupération de compte si vous en fournissez une.</li>
+        <li>Mot de passe — stocké sous forme de hachage à sens unique. Nous ne stockons ni ne transmettons jamais votre mot de passe en clair.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Données foncières (chiffrées, connaissance zéro)</h2>
+      <div class="callout">
+        <p>Tous les noms de parcelles, coordonnées, points de délimitation, notes et sous-parcelles sont chiffrés avec une clé dérivée de votre phrase secrète avant de quitter votre appareil. Nous ne stockons que le texte chiffré. Nous n'avons aucun moyen technique de lire vos données foncières, ni de savoir quelles sont les propriétés d'un utilisateur donné ou où elles se situent.</p>
+      </div>
+      <ul>
+        <li>Coordonnées GPS et sommets des limites de vos parcelles</li>
+        <li>Noms et notes que vous attribuez à vos propriétés</li>
+        <li>Noms et types d'usage des sous-parcelles</li>
+        <li>Surfaces calculées</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Données de récupération</h2>
+      <ul>
+        <li>Questions et réponses de sécurité — chiffrées côté client. Nous ne pouvons pas les lire.</li>
+        <li>Sauvegarde chiffrée de la phrase secrète — stockée sous forme d'un blob chiffré AES-256 dérivé par PBKDF2. Votre phrase secrète n'est jamais transmise en clair.</li>
+        <li>Métadonnées de délai de récupération — horodatages et statut de tout délai de récupération de compte actif. Utilisés pour faire respecter le délai de sécurité de 24 heures.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Données techniques que nous ne collectons pas</h2>
+      <ul>
+        <li>Aucun identifiant publicitaire</li>
+        <li>Aucune analyse ni suivi d'utilisation</li>
+        <li>Aucune empreinte d'appareil</li>
+        <li>Aucune liste de contacts ni autre donnée d'application</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">02 — Services tiers</div>
+      <h2>Supabase</h2>
+      <p>Notre base de données est hébergée sur Supabase (PostgreSQL). Seul le texte chiffré y est stocké. Supabase opère selon les normes européennes de protection des données. <a href="https://supabase.com/privacy" target="_blank">Politique de confidentialité Supabase →</a></p>
+
+      <h2 style="margin-top:24px">Twilio</h2>
+      <p>Nous utilisons Twilio pour envoyer des notifications SMS lorsqu'une récupération de compte est initiée — pour que vous sachiez si quelqu'un tente d'accéder à votre compte. Votre numéro de téléphone est transmis à Twilio uniquement à cette fin et n'est pas utilisé à des fins commerciales. <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank">Politique de confidentialité Twilio →</a></p>
+
+      <h2 style="margin-top:24px">Mapbox</h2>
+      <p>Les cartes satellite et de terrain sont affichées via Mapbox. Lorsque vous consultez une carte, Mapbox peut enregistrer les requêtes de tuiles (qui incluent la position approximative de la fenêtre d'affichage). Il s'agit d'une télémétrie standard et ces données ne sont pas liées à votre compte ni à vos données foncières. <a href="https://www.mapbox.com/legal/privacy" target="_blank">Politique de confidentialité Mapbox →</a></p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">03 — Vos droits</div>
+      <p>Vous pouvez demander la suppression de votre compte et de toutes les données associées à tout moment en nous contactant. Vos données foncières étant chiffrées et nous ne disposant d'aucune clé de déchiffrement, la suppression est définitive — nous n'avons aucun moyen de les récupérer en votre nom.</p>
+      <p>Vous pouvez exporter vos données de parcelles depuis l'application à tout moment.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">04 — Conservation des données</div>
+      <p>Les données de compte sont conservées tant que votre compte est actif. Les données foncières chiffrées sont conservées jusqu'à ce que vous supprimiez une parcelle ou fermiez votre compte. Les journaux de délai de récupération sont supprimés 30 jours après la résolution du délai.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-title">05 — Contact</div>
+      <p>Questions ou demandes de suppression : <a href="mailto:forcadosc@gmail.com">forcadosc@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <span>TerraWatch Field &nbsp;·&nbsp; com.terrawatch.field</span>
+    <span data-lang="en">Last updated August 20, 2026</span>
+    <span data-lang="fr">Dernière mise à jour le 20 août 2026</span>
+  </footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.body.classList.toggle('lang-fr', lang === 'fr');
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
+    });
+  }
+</script>
